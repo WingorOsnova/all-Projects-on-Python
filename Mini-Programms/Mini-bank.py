@@ -83,18 +83,18 @@ while True:
     print("1 - View balance\n2 - Refill balance\n3 - Withdraw money\n4 - Exit")
     action = input()
     if action == "1":
-        print(f"On your initial account: {balance}$")
+        print(f"On your initial account: {round(balance,2)}$")
     elif action == "2":
         refill_balance = float(input("Enter the amount of the recharge?: "))
         balance = balance + refill_balance
-        print(f"Balance successfully replenished! New balance: {balance}$")
+        print(f"Balance successfully replenished! New balance: {round(balance,2)}$")
     elif action == "3":
         withdraw_money = float(input("How much do you want to withdraw?: "))
         if withdraw_money > balance:
-            print(f"Not enough funds! Balance: {balance}$")
+            print(f"Not enough funds! Balance: {round(balance,2)}$")
         else:
             balance = balance - withdraw_money
-            print(f"You have withdrawn {withdraw_money}, and your account is left with : {balance}")
+            print(f"You have withdrawn {withdraw_money}, and your account is left with : {round(balance,2)}$")
     elif action == "4":
         print(f"Goodbye, {name.capitalize()}!")
         break
