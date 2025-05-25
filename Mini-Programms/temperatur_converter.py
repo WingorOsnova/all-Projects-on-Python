@@ -1,5 +1,5 @@
 #Python temp-convector
-unit = input("Is this temperature is Celsius or Fahrenheit? Enter(C or F): ")
+unit = input("Is this temperature is Celsius or Fahrenheit? Enter(C or F): ").upper()
 temp = float(input("Enter your temperature from outside: "))
 
 if unit == "C":

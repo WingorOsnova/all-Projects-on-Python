@@ -1,7 +1,7 @@
 #Python weight converter
 
 weight = float(input("Enter your weight: "))
-unit = input("Kilograms or Pounds? Enter(K or L): ")
+unit = input("Kilograms or Pounds? Enter(K or L): ").upper()
 
 if unit == "K":
     weight = weight * 2.205
